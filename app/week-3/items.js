@@ -5,12 +5,12 @@
 
 export default function Item({ name, quantity, category }) {
     return (
-        <li class="flex justify-between items-center p-4 border-b">
+        <li className="flex justify-between items-center p-4 border-b">
             <div>
-                <h2 class="text-lg font-bold">{name}</h2>
-                <p class="text-sm">{category}</p>
+                <h2 className="text-lg font-bold">{name}</h2>
+                <p className="text-sm">{category}</p>
             </div>
-            <p class="text-sm">{quantity}</p>
+            <p className="text-sm">{quantity}</p>
         </li>
     );
 }   
