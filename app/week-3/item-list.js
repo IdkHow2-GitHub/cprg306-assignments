@@ -106,7 +106,7 @@ export default function ItemList() {
                 </li>
                 <li className="p-2 m-4 bg-slate-600 max-w-sm rounded-lg">
                     <h2 className="text-xl uppercase font-bold">{item6.name}</h2>
-                    <div clclassNamess="text-sm italic text-amber-200">Buy {item6.quantity} in {item6.category}</div>
+                    <div classNames="text-sm italic text-amber-200">Buy {item6.quantity} in {item6.category}</div>
                 </li>
                 <li className="p-2 m-4 bg-slate-600 max-w-sm rounded-lg">
                     <h2 className="text-xl uppercase font-bold">{item7.name}</h2>
