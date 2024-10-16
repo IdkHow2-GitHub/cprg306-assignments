@@ -1,17 +1,19 @@
 "use client";
 import { useState } from "react";
 
-export default function NewItem() {
-  //item name forum
+export default function NewItem({ onAddItem }) {
+  //item name section
   const [name, setName] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    const item = { name, quantity, category };
-    console.log(item);
-    alert(
-      `1 new item added to your shopping list: ${quantity} ${name}(s) from ${category}`
-    );
+    const newItem = {
+      id: Math.random().toString(36).substr(2, 9),
+      name: name,
+      quantity: quantity,
+      category: category,
+    };
+    onAddItem(newItem);
     setName("");
     setQuantity(1);
     setCategory("produce");
@@ -34,7 +36,7 @@ export default function NewItem() {
   const [category, setCategory] = useState("produce");
 
   return (
-    <main className="flex justify-center w-full">
+    <main className="flex w-full">
       <div className="p-2 m-4 bg-slate-600 rounded-lg">
         {/* item name section */}
         <form className="flex justify-between">
