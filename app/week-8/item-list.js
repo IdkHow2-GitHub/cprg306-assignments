@@ -45,17 +45,13 @@ export default function ItemList({ items = [], onItemSelect }) {
       >
         Sort by Category
       </button>
-      <ul
-        className="p-2 m-4 bg-stone-600 max-w-sm rounded-lg"
-        onClick={onItemSelect}
-      >
+      <ul className="p-2 m-4 bg-stone-600 max-w-sm rounded-lg">
         {sortedItems.map((item) => (
           <Item
-            key={item.name}
-            className=""
             name={item.name}
             quantity={item.quantity}
             category={item.category}
+            onSelect={() => onItemSelect(item.name)}
           />
         ))}
       </ul>

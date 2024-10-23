@@ -48,9 +48,11 @@ export default function MealIdeas({ ingredients }) {
   }, [ingredients]);
 
   return (
-    <div>
-      <h2>Meal Ideas</h2>
-      <ul>
+    <div className="justify-center">
+      <h2 className="m-2 font-black p-2 outline-4 outline rounded-lg text-white text-center max-w-52 outline-yellow-300 bg-yellow-500">
+        Meal Ideas
+      </h2>
+      <ul className="p-2 m-4 bg-stone-600 max-w-sm rounded-lg">
         {meals.map((meal) => (
           <li key={meal.idMeal}>{meal.strMeal}</li>
         ))}

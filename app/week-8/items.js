@@ -5,15 +5,11 @@
 
 // Add onClick Handler to List Item: In the returned JSX, add the onClick prop. This makes the entire list item clickable and the provided onSelect function will be triggered when a user clicks on the item.
 
-export default function Item({ name, quantity, category }) {
-  const onClick = () => {
-    alert(`You clicked on ${name}`);
-  };
-
+export default function Item({ name, quantity, category, onSelect }) {
   return (
     <li
       className="flex justify-between items-center p-4 border-b hover:bg-amber-900 hover:text-yellow-200"
-      onSelect={onClick}
+      onClick={onSelect}
     >
       <div>
         <h2 className="text-xl uppercase font-bold">{name}</h2>
