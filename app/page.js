@@ -12,7 +12,7 @@ export default function Home() {
   function handleNotReady() {
     alert("This assignment is not ready yet! Please check back later.");
   }
-
+  //onClick={handleWIP}
   return (
     <main>
       <div className="">
@@ -31,13 +31,11 @@ export default function Home() {
         <br />
         <Link href="week-7">Week 7 Assignment</Link>
         <br />
-        <Link className="text-yellow-400" onClick={handleWIP} href={"week-8"}>
-          Week 8 Assignment
-        </Link>
+        <Link href={"week-8"}>Week 8 Assignment</Link>
         <br />
-        <button className="text-red-400" onClick={handleNotReady}>
+        <Link className="text-yellow-400" href={"week-9"}>
           Week 9 Assignment
-        </button>
+        </Link>
         <br />
         <button className="text-red-400" onClick={handleNotReady}>
           Week 10 Assignment
