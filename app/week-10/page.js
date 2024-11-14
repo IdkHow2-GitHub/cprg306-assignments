@@ -83,7 +83,7 @@ export default function Page() {
             <div className="flex justify-between">
               <Link
                 className="m-3 font-black p-2 outline-4 outline rounded-lg text-white outline-green-300 bg-green-500 hover:bg-gray-800 hover:outline-gray-500 hover:text-green-400"
-                href="./week-9/shopping-list/"
+                href="./week-10/shopping-list/"
               >
                 Go to Shopping List
               </Link>

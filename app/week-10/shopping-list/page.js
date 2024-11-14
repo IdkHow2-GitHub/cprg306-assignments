@@ -5,6 +5,7 @@ import NewItem from "./new-item";
 import MealIdeas from "./meal-ideas";
 
 export default function Page() {
+  const itemsData = []; // i want an empty grocery list to start
   const [items, setItems] = useState(itemsData);
   const [selectedItemName, setSelectedItemName] = useState("");
 
