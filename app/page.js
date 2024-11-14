@@ -33,13 +33,11 @@ export default function Home() {
         <br />
         <Link href={"week-8"}>Week 8 Assignment</Link>
         <br />
-        <Link className="text-yellow-400" href={"week-9"}>
-          Week 9 Assignment
-        </Link>
+        <Link href={"week-9"}>Week 9 Assignment</Link>
         <br />
-        <button className="text-red-400" onClick={handleNotReady}>
+        <Link className="text-yellow-400" onClick={handleWIP} href={"week-10"}>
           Week 10 Assignment
-        </button>
+        </Link>
       </div>
     </main>
   );
