@@ -20,6 +20,7 @@ import MealIdeas from "./meal-ideas";
 import { getItems, addItem } from "../_services/shopping-list-service";
 import { useEffect } from "react";
 import { useUserAuth } from "../_utils/auth-context";
+import Link from "next/link";
 
 export default function Page() {
   const [items, setItems] = useState([]);
@@ -71,7 +72,10 @@ export default function Page() {
 
   return (
     <main>
-      <h1 className="text-3xl font-bold m-2">Shopping List</h1>
+      <div className="">
+        <h1 className="text-3xl font-bold m-2">Shopping List</h1>
+        <Link className="text-1xl italic font-bold text-amber-200 m-2" href="../week-10">Go Back</Link>
+      </div>
       <div className="flex w-full">
         <div className="flex justify-between">
           <div>
