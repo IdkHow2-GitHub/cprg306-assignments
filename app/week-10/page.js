@@ -14,9 +14,11 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useEffect } from "react";
 import { getItems, addItem } from "./_services/shopping-list-service.js";
+import { useState } from "react";
 
 export default function Page() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     loadItems();

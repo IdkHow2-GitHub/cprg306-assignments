@@ -19,11 +19,12 @@ import NewItem from "./new-item";
 import MealIdeas from "./meal-ideas";
 import { getItems, addItem } from "../_services/shopping-list-service";
 import { useEffect } from "react";
+import { useUserAuth } from "../_utils/auth-context";
 
 export default function Page() {
   const [items, setItems] = useState([]);
   const [selectedItemName, setSelectedItemName] = useState("");
-  const [user, setUser] = useState({ uid: "4K6f7iUYoXfWflMsW4O3VA0odP63" });
+  const { user } = useUserAuth();
 
   const loadItems = async () => {
     try {
